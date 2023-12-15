@@ -1,4 +1,4 @@
-// File: /home/qodeleaf/dapp-cow/src/app/page.js
+// File: /home/qodeleaf/Desktop/new folder/dapp-cow/src/app/page.js
 import * as entry from '../../../src/app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

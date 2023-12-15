@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import { useEthers, Goerli, Mainnet } from "@usedapp/core";
 import Button from "@mui/material-next/Button";
 import { useWalletProvider } from "../../src/context/WalletContext";
-
+import { Typography } from "@mui/material";
 const ConnectWallet = () => {
   const { activateBrowserWallet, account, chainId } = useEthers();
   const { chainName, setChainName } = useWalletProvider();
@@ -32,7 +32,6 @@ const ConnectWallet = () => {
     activateBrowserWallet();
   };
 
-
   return (
     <div
       style={{
@@ -44,8 +43,14 @@ const ConnectWallet = () => {
       }}
     >
       <div>
-        <Button onClick={handleConnectWallet} className="btn">
-          Connect Wallet
+        <Button
+          variant="elevated"
+          onClick={handleConnectWallet}
+          style={{ backgroundColor: "#705402", color: "white" }}
+        >
+          <Typography variant="h6" fontWeight="bold" color="white">
+            Connect Wallet
+          </Typography>
         </Button>
       </div>
     </div>

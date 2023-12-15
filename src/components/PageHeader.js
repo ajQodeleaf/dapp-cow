@@ -135,7 +135,11 @@ function PageHeader({ pageTitle }) {
         justifyContent: "space-between",
       }}
     >
-      <Typography variant="h1" color="black" style={{ fontWeight: "bold" }}>
+      <Typography
+        variant="h1"
+        color="#896808"
+        style={{ fontWeight: "bold", fontFamily: "CustomFont" }}
+      >
         {pageTitle}
       </Typography>
       <Grid
@@ -210,7 +214,7 @@ function PageHeader({ pageTitle }) {
         <Button
           variant="elevated"
           marginLeft="20px"
-          style={{backgroundColor:"red"}}
+          style={{ backgroundColor: "red" }}
           onClick={() => {
             deactivate();
             router.push("/");
