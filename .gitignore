@@ -1,0 +1,11 @@
+# dependencies
+/node_modules
+
+
+jsconfig.json
+.eslintrc.json
+next.config.js
+
+src/app/page.module.css
+src/app/globals.css
+package-lock.json
